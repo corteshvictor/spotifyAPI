@@ -21,7 +21,7 @@ const BASE_API = "https://accounts.spotify.com";
 const access_token = Buffer.from(`${CLIENT_ID}:${CLIENT_SECRET}`).toString(
   "base64"
 );
-console.log("access_token", access_token);
+
 app.get("/", (_req, res) => res.send("Service Available!"));
 
 app.get("/login", async (_req, res) => {
